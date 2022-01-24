@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754DA279F0BBA007257FE /* AppDelegate.swift */; };
-		016754DF279F0BBA007257FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754DE279F0BBA007257FE /* ViewController.swift */; };
 		016754E2279F0BBA007257FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016754E0279F0BBA007257FE /* Main.storyboard */; };
 		016754E4279F0BBB007257FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016754E3279F0BBB007257FE /* Assets.xcassets */; };
 		016754E7279F0BBB007257FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016754E5279F0BBB007257FE /* LaunchScreen.storyboard */; };
 		016754F2279F0BBC007257FE /* HalanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754F1279F0BBC007257FE /* HalanTests.swift */; };
 		016754FC279F0BBC007257FE /* HalanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FB279F0BBC007257FE /* HalanUITests.swift */; };
 		016754FE279F0BBC007257FE /* HalanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */; };
+		01675514279F1132007257FE /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675513279F1132007257FE /* StartViewModel.swift */; };
+		01675516279F1143007257FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675515279F1143007257FE /* StartViewController.swift */; };
+		01675518279F115C007257FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01675517279F115C007257FE /* Color.xcassets */; };
 		30D7A9A76B87BEC9CA1AC69D /* Pods_Halan_HalanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */; };
 		958429261EA2D4682D21422D /* Pods_Halan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */; };
 		C34EF1F9A18D1BD06C484786 /* Pods_HalanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */; };
@@ -40,7 +42,6 @@
 /* Begin PBXFileReference section */
 		016754D7279F0BBA007257FE /* Halan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754DA279F0BBA007257FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		016754DE279F0BBA007257FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		016754E1279F0BBA007257FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		016754E3279F0BBB007257FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016754E6279F0BBB007257FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		016754F7279F0BBC007257FE /* HalanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754FB279F0BBC007257FE /* HalanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITests.swift; sourceTree = "<group>"; };
 		016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01675513279F1132007257FE /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		01675515279F1143007257FE /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		01675517279F115C007257FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.release.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +124,6 @@
 				0167550C279F0D30007257FE /* Extensions */,
 				0167550D279F0D3C007257FE /* Network */,
 				0167550B279F0CFF007257FE /* Resources */,
-				016754DE279F0BBA007257FE /* ViewController.swift */,
 			);
 			path = Halan;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				016754E3279F0BBB007257FE /* Assets.xcassets */,
+				01675517279F115C007257FE /* Color.xcassets */,
 				016754E5279F0BBB007257FE /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -185,8 +189,34 @@
 		0167550F279F0D58007257FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				01675510279F10EB007257FE /* Start */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		01675510279F10EB007257FE /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				01675512279F110A007257FE /* Views */,
+				01675511279F10FA007257FE /* ViewModel */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		01675511279F10FA007257FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01675513279F1132007257FE /* StartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01675512279F110A007257FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01675515279F1143007257FE /* StartViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		03D1C0D9B64A93859516553B /* Frameworks */ = {
@@ -209,7 +239,6 @@
 				A2400630B98036FD1F4DD253 /* Pods-HalanTests.debug.xcconfig */,
 				985B874056EF07D0A9BD91D5 /* Pods-HalanTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -323,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016754E7279F0BBB007257FE /* LaunchScreen.storyboard in Resources */,
+				01675518279F115C007257FE /* Color.xcassets in Resources */,
 				016754E4279F0BBB007257FE /* Assets.xcassets in Resources */,
 				016754E2279F0BBA007257FE /* Main.storyboard in Resources */,
 			);
@@ -452,7 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				016754DF279F0BBA007257FE /* ViewController.swift in Sources */,
+				01675516279F1143007257FE /* StartViewController.swift in Sources */,
+				01675514279F1132007257FE /* StartViewModel.swift in Sources */,
 				016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754DA279F0BBA007257FE /* AppDelegate.swift */; };
-		016754DD279F0BBA007257FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754DC279F0BBA007257FE /* SceneDelegate.swift */; };
 		016754DF279F0BBA007257FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754DE279F0BBA007257FE /* ViewController.swift */; };
 		016754E2279F0BBA007257FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016754E0279F0BBA007257FE /* Main.storyboard */; };
 		016754E4279F0BBB007257FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016754E3279F0BBB007257FE /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		016754D7279F0BBA007257FE /* Halan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754DA279F0BBA007257FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		016754DC279F0BBA007257FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		016754DE279F0BBA007257FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		016754E1279F0BBA007257FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		016754E3279F0BBB007257FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,13 +97,13 @@
 		016754D9279F0BBA007257FE /* Halan */ = {
 			isa = PBXGroup;
 			children = (
-				016754DA279F0BBA007257FE /* AppDelegate.swift */,
-				016754DC279F0BBA007257FE /* SceneDelegate.swift */,
+				0167550A279F0CD8007257FE /* Supporting Files */,
+				0167550F279F0D58007257FE /* Modules */,
+				0167550E279F0D49007257FE /* Storyboards */,
+				0167550C279F0D30007257FE /* Extensions */,
+				0167550D279F0D3C007257FE /* Network */,
+				0167550B279F0CFF007257FE /* Resources */,
 				016754DE279F0BBA007257FE /* ViewController.swift */,
-				016754E0279F0BBA007257FE /* Main.storyboard */,
-				016754E3279F0BBB007257FE /* Assets.xcassets */,
-				016754E5279F0BBB007257FE /* LaunchScreen.storyboard */,
-				016754E8279F0BBB007257FE /* Info.plist */,
 			);
 			path = Halan;
 			sourceTree = "<group>";
@@ -125,6 +123,53 @@
 				016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */,
 			);
 			path = HalanUITests;
+			sourceTree = "<group>";
+		};
+		0167550A279F0CD8007257FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				016754DA279F0BBA007257FE /* AppDelegate.swift */,
+				016754E8279F0BBB007257FE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0167550B279F0CFF007257FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				016754E3279F0BBB007257FE /* Assets.xcassets */,
+				016754E5279F0BBB007257FE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0167550C279F0D30007257FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0167550D279F0D3C007257FE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0167550E279F0D49007257FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				016754E0279F0BBA007257FE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0167550F279F0D58007257FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +305,6 @@
 			files = (
 				016754DF279F0BBA007257FE /* ViewController.swift in Sources */,
 				016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */,
-				016754DD279F0BBA007257FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

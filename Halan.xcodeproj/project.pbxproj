@@ -17,6 +17,16 @@
 		01675514279F1132007257FE /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675513279F1132007257FE /* StartViewModel.swift */; };
 		01675516279F1143007257FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675515279F1143007257FE /* StartViewController.swift */; };
 		01675518279F115C007257FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01675517279F115C007257FE /* Color.xcassets */; };
+		0167551E279F1686007257FE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551D279F1686007257FE /* ActivityViewController.swift */; };
+		01675520279F16A0007257FE /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551F279F16A0007257FE /* ActivityViewModel.swift */; };
+		01675522279F16AC007257FE /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675521279F16AC007257FE /* ActivityModel.swift */; };
+		01675524279F194B007257FE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675523279F194B007257FE /* State.swift */; };
+		01675526279F19A5007257FE /* ActivityDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675525279F19A5007257FE /* ActivityDataViewModel.swift */; };
+		01675529279F1AC4007257FE /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675528279F1AC4007257FE /* ActivityService.swift */; };
+		0167552B279F1B80007257FE /* URLsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552A279F1B80007257FE /* URLsConstants.swift */; };
+		0167552D279F1C69007257FE /* ActivityDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552C279F1C69007257FE /* ActivityDataService.swift */; };
+		0167552F279F4702007257FE /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552E279F4702007257FE /* UIViewController+Alert.swift */; };
+		01675533279F4895007257FE /* UILabel+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675532279F4895007257FE /* UILabel+LineSpacing.swift */; };
 		30D7A9A76B87BEC9CA1AC69D /* Pods_Halan_HalanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */; };
 		958429261EA2D4682D21422D /* Pods_Halan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */; };
 		C34EF1F9A18D1BD06C484786 /* Pods_HalanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */; };
@@ -54,6 +64,16 @@
 		01675513279F1132007257FE /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		01675515279F1143007257FE /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		01675517279F115C007257FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		0167551D279F1686007257FE /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		0167551F279F16A0007257FE /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		01675521279F16AC007257FE /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		01675523279F194B007257FE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		01675525279F19A5007257FE /* ActivityDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataViewModel.swift; sourceTree = "<group>"; };
+		01675528279F1AC4007257FE /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		0167552A279F1B80007257FE /* URLsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLsConstants.swift; sourceTree = "<group>"; };
+		0167552C279F1C69007257FE /* ActivityDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataService.swift; sourceTree = "<group>"; };
+		0167552E279F4702007257FE /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		01675532279F4895007257FE /* UILabel+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LineSpacing.swift"; sourceTree = "<group>"; };
 		19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.release.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +142,7 @@
 				0167550F279F0D58007257FE /* Modules */,
 				0167550E279F0D49007257FE /* Storyboards */,
 				0167550C279F0D30007257FE /* Extensions */,
-				0167550D279F0D3C007257FE /* Network */,
+				0167550D279F0D3C007257FE /* Services */,
 				0167550B279F0CFF007257FE /* Resources */,
 			);
 			path = Halan;
@@ -160,6 +180,7 @@
 				016754E3279F0BBB007257FE /* Assets.xcassets */,
 				01675517279F115C007257FE /* Color.xcassets */,
 				016754E5279F0BBB007257FE /* LaunchScreen.storyboard */,
+				0167552A279F1B80007257FE /* URLsConstants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,15 +188,18 @@
 		0167550C279F0D30007257FE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				01675531279F487C007257FE /* UILabel */,
+				01675530279F4864007257FE /* UIViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0167550D279F0D3C007257FE /* Network */ = {
+		0167550D279F0D3C007257FE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				01675527279F1AA6007257FE /* ActivityService */,
 			);
-			path = Network;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0167550E279F0D49007257FE /* Storyboards */ = {
@@ -189,6 +213,7 @@
 		0167550F279F0D58007257FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				01675519279F1637007257FE /* Activity */,
 				01675510279F10EB007257FE /* Start */,
 			);
 			path = Modules;
@@ -217,6 +242,67 @@
 				01675515279F1143007257FE /* StartViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		01675519279F1637007257FE /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				0167551C279F1670007257FE /* Model */,
+				0167551A279F1644007257FE /* ViewModel */,
+				0167551B279F1654007257FE /* Views */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		0167551A279F1644007257FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0167551F279F16A0007257FE /* ActivityViewModel.swift */,
+				01675525279F19A5007257FE /* ActivityDataViewModel.swift */,
+				01675523279F194B007257FE /* State.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0167551B279F1654007257FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0167551D279F1686007257FE /* ActivityViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0167551C279F1670007257FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01675521279F16AC007257FE /* ActivityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01675527279F1AA6007257FE /* ActivityService */ = {
+			isa = PBXGroup;
+			children = (
+				01675528279F1AC4007257FE /* ActivityService.swift */,
+				0167552C279F1C69007257FE /* ActivityDataService.swift */,
+			);
+			path = ActivityService;
+			sourceTree = "<group>";
+		};
+		01675530279F4864007257FE /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0167552E279F4702007257FE /* UIViewController+Alert.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		01675531279F487C007257FE /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				01675532279F4895007257FE /* UILabel+LineSpacing.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		03D1C0D9B64A93859516553B /* Frameworks */ = {
@@ -482,9 +568,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01675520279F16A0007257FE /* ActivityViewModel.swift in Sources */,
+				01675529279F1AC4007257FE /* ActivityService.swift in Sources */,
+				01675526279F19A5007257FE /* ActivityDataViewModel.swift in Sources */,
+				0167552F279F4702007257FE /* UIViewController+Alert.swift in Sources */,
 				01675516279F1143007257FE /* StartViewController.swift in Sources */,
+				01675522279F16AC007257FE /* ActivityModel.swift in Sources */,
 				01675514279F1132007257FE /* StartViewModel.swift in Sources */,
 				016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */,
+				0167552B279F1B80007257FE /* URLsConstants.swift in Sources */,
+				01675524279F194B007257FE /* State.swift in Sources */,
+				0167552D279F1C69007257FE /* ActivityDataService.swift in Sources */,
+				0167551E279F1686007257FE /* ActivityViewController.swift in Sources */,
+				01675533279F4895007257FE /* UILabel+LineSpacing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

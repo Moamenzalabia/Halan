@@ -23,7 +23,7 @@ class StartViewController: UIViewController {
     
     // MARK: - Navigation
     func navigateToActivityViewController() {
-        let vc = UIViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let activityViewController = ActivityViewController.instance()
+        navigationController?.pushViewController(activityViewController, animated: true)
     }
 }

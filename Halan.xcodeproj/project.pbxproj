@@ -15,6 +15,9 @@
 		016754F2279F0BBC007257FE /* HalanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754F1279F0BBC007257FE /* HalanTests.swift */; };
 		016754FC279F0BBC007257FE /* HalanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FB279F0BBC007257FE /* HalanUITests.swift */; };
 		016754FE279F0BBC007257FE /* HalanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */; };
+		30D7A9A76B87BEC9CA1AC69D /* Pods_Halan_HalanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */; };
+		958429261EA2D4682D21422D /* Pods_Halan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */; };
+		C34EF1F9A18D1BD06C484786 /* Pods_HalanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		016754F7279F0BBC007257FE /* HalanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754FB279F0BBC007257FE /* HalanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITests.swift; sourceTree = "<group>"; };
 		016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.release.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		985B874056EF07D0A9BD91D5 /* Pods-HalanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalanTests.release.xcconfig"; path = "Target Support Files/Pods-HalanTests/Pods-HalanTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2400630B98036FD1F4DD253 /* Pods-HalanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalanTests.debug.xcconfig"; path = "Target Support Files/Pods-HalanTests/Pods-HalanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4CDAC1B5FAAEBD66BF233A3 /* Pods-Halan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan.debug.xcconfig"; path = "Target Support Files/Pods-Halan/Pods-Halan.debug.xcconfig"; sourceTree = "<group>"; };
+		BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halan_HalanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F246315BE6E5CD61942558 /* Pods-Halan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan.release.xcconfig"; path = "Target Support Files/Pods-Halan/Pods-Halan.release.xcconfig"; sourceTree = "<group>"; };
+		E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958429261EA2D4682D21422D /* Pods_Halan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34EF1F9A18D1BD06C484786 /* Pods_HalanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D7A9A76B87BEC9CA1AC69D /* Pods_Halan_HalanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				016754F0279F0BBC007257FE /* HalanTests */,
 				016754FA279F0BBC007257FE /* HalanUITests */,
 				016754D8279F0BBA007257FE /* Products */,
+				23D27DBCFDD72753E46E3679 /* Pods */,
+				03D1C0D9B64A93859516553B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +189,30 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		03D1C0D9B64A93859516553B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */,
+				BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */,
+				E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23D27DBCFDD72753E46E3679 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4CDAC1B5FAAEBD66BF233A3 /* Pods-Halan.debug.xcconfig */,
+				D6F246315BE6E5CD61942558 /* Pods-Halan.release.xcconfig */,
+				585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */,
+				19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */,
+				A2400630B98036FD1F4DD253 /* Pods-HalanTests.debug.xcconfig */,
+				985B874056EF07D0A9BD91D5 /* Pods-HalanTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01675501279F0BBC007257FE /* Build configuration list for PBXNativeTarget "Halan" */;
 			buildPhases = (
+				07DA0913FE45E32F47FDE72B /* [CP] Check Pods Manifest.lock */,
 				016754D3279F0BBA007257FE /* Sources */,
 				016754D4279F0BBA007257FE /* Frameworks */,
 				016754D5279F0BBA007257FE /* Resources */,
+				562C2135EE9B44B71C016986 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01675504279F0BBC007257FE /* Build configuration list for PBXNativeTarget "HalanTests" */;
 			buildPhases = (
+				2F9ED5000492E2E25815D0EF /* [CP] Check Pods Manifest.lock */,
 				016754E9279F0BBC007257FE /* Sources */,
 				016754EA279F0BBC007257FE /* Frameworks */,
 				016754EB279F0BBC007257FE /* Resources */,
@@ -214,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01675507279F0BBC007257FE /* Build configuration list for PBXNativeTarget "HalanUITests" */;
 			buildPhases = (
+				E571A2DA17F52FFDA72D3D02 /* [CP] Check Pods Manifest.lock */,
 				016754F3279F0BBC007257FE /* Sources */,
 				016754F4279F0BBC007257FE /* Frameworks */,
 				016754F5279F0BBC007257FE /* Resources */,
+				63CB3C9A19EF25AC4B61FC30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +343,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DA0913FE45E32F47FDE72B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Halan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F9ED5000492E2E25815D0EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HalanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562C2135EE9B44B71C016986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halan/Pods-Halan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halan/Pods-Halan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Halan/Pods-Halan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63CB3C9A19EF25AC4B61FC30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E571A2DA17F52FFDA72D3D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Halan-HalanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		016754D3279F0BBA007257FE /* Sources */ = {
@@ -478,6 +627,7 @@
 		};
 		01675502279F0BBC007257FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CDAC1B5FAAEBD66BF233A3 /* Pods-Halan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +656,7 @@
 		};
 		01675503279F0BBC007257FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F246315BE6E5CD61942558 /* Pods-Halan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +685,7 @@
 		};
 		01675505279F0BBC007257FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2400630B98036FD1F4DD253 /* Pods-HalanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +706,7 @@
 		};
 		01675506279F0BBC007257FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985B874056EF07D0A9BD91D5 /* Pods-HalanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +727,7 @@
 		};
 		01675508279F0BBC007257FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +746,7 @@
 		};
 		01675509279F0BBC007257FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

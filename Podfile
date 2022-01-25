@@ -1,4 +1,3 @@
-# Uncomment the next line to define a global platform for your project
 platform :ios, '13.0’
 
 target 'Halan' do
@@ -7,7 +6,8 @@ target 'Halan' do
 
   pod 'SwiftLint', '0.43.1'
   pod 'Moya', '~> 15.0'
-
+#  pod ‘HalanUIComponent’, :git => "https://github.com/Moamenzalabia/HalanUIComponent.git"
+  pod 'HalanUIComponents', :path => “../HalanUIComponents"
 
   target 'HalanTests' do
     inherit! :search_paths

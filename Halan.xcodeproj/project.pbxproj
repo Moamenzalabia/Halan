@@ -14,9 +14,7 @@
 		016754F2279F0BBC007257FE /* HalanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754F1279F0BBC007257FE /* HalanTests.swift */; };
 		016754FC279F0BBC007257FE /* HalanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FB279F0BBC007257FE /* HalanUITests.swift */; };
 		016754FE279F0BBC007257FE /* HalanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */; };
-		01675514279F1132007257FE /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675513279F1132007257FE /* StartViewModel.swift */; };
 		01675516279F1143007257FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675515279F1143007257FE /* StartViewController.swift */; };
-		01675518279F115C007257FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01675517279F115C007257FE /* Color.xcassets */; };
 		0167551E279F1686007257FE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551D279F1686007257FE /* ActivityViewController.swift */; };
 		01675520279F16A0007257FE /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551F279F16A0007257FE /* ActivityViewModel.swift */; };
 		01675522279F16AC007257FE /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675521279F16AC007257FE /* ActivityModel.swift */; };
@@ -61,9 +59,7 @@
 		016754F7279F0BBC007257FE /* HalanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754FB279F0BBC007257FE /* HalanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITests.swift; sourceTree = "<group>"; };
 		016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		01675513279F1132007257FE /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		01675515279F1143007257FE /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		01675517279F115C007257FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		0167551D279F1686007257FE /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		0167551F279F16A0007257FE /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		01675521279F16AC007257FE /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
@@ -178,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				016754E3279F0BBB007257FE /* Assets.xcassets */,
-				01675517279F115C007257FE /* Color.xcassets */,
 				016754E5279F0BBB007257FE /* LaunchScreen.storyboard */,
 				0167552A279F1B80007257FE /* URLsConstants.swift */,
 			);
@@ -223,17 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				01675512279F110A007257FE /* Views */,
-				01675511279F10FA007257FE /* ViewModel */,
 			);
 			path = Start;
-			sourceTree = "<group>";
-		};
-		01675511279F10FA007257FE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				01675513279F1132007257FE /* StartViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		01675512279F110A007257FE /* Views */ = {
@@ -438,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				016754E7279F0BBB007257FE /* LaunchScreen.storyboard in Resources */,
-				01675518279F115C007257FE /* Color.xcassets in Resources */,
 				016754E4279F0BBB007257FE /* Assets.xcassets in Resources */,
 				016754E2279F0BBA007257FE /* Main.storyboard in Resources */,
 			);
@@ -574,7 +559,6 @@
 				0167552F279F4702007257FE /* UIViewController+Alert.swift in Sources */,
 				01675516279F1143007257FE /* StartViewController.swift in Sources */,
 				01675522279F16AC007257FE /* ActivityModel.swift in Sources */,
-				01675514279F1132007257FE /* StartViewModel.swift in Sources */,
 				016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */,
 				0167552B279F1B80007257FE /* URLsConstants.swift in Sources */,
 				01675524279F194B007257FE /* State.swift in Sources */,

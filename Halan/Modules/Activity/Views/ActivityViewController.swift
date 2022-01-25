@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import HalanUIComponents
 class ActivityViewController: UIViewController {
     
     // MARK: IBOutlets
@@ -18,6 +18,7 @@ class ActivityViewController: UIViewController {
     @IBOutlet weak var linkLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var replaceActivityButton: HalanButton!
     
     // MARK: - Properties
     static func instance()-> ActivityViewController {

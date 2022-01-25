@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,28 +12,33 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="StartViewController" customModule="Halan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j84-YT-4s3">
-                                <rect key="frame" x="40" y="428" width="334" height="40"/>
-                                <color key="backgroundColor" name="HDSBlueBackground"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Ogs-Qn-5aW"/>
-                                </constraints>
-                                <color key="tintColor" name="HDSNegativeBackground"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
-                                </buttonConfiguration>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j84-YT-4s3" customClass="HalanButton" customModule="HalanUIComponents">
+                                <rect key="frame" x="40" y="430" width="334" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonTheme">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonBackground">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startButtonDidPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDf-Xc-rbO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j84-YT-4s3" secondAttribute="trailing" constant="40" id="JBf-u1-lQq"/>
                             <constraint firstItem="j84-YT-4s3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VvL-eO-hxq"/>
@@ -64,7 +68,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfP-i7-hmX">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="660"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bje-4o-4C6">
                                                         <rect key="frame" x="20" y="32" width="374" height="93.5"/>
@@ -306,13 +310,21 @@
                                                 </constraints>
                                                 <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </activityIndicatorView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-ZK-SDy">
-                                                <rect key="frame" x="20" y="820" width="374" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="TNe-nn-03V"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Replace activity"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-ZK-SDy" customClass="HalanButton" customModule="HalanUIComponents">
+                                                <rect key="frame" x="20" y="678" width="374" height="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Replace activity"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonSize">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonTheme">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonBackground">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="replaceActivityButtonDidPressed:" destination="8ps-Nd-EXD" eventType="touchUpInside" id="Ntf-pu-bqd"/>
                                                 </connections>
@@ -323,10 +335,10 @@
                                             <constraint firstItem="CFD-k1-gfa" firstAttribute="centerY" secondItem="XxC-fP-hlA" secondAttribute="centerY" multiplier="1:1.5" id="613-Tr-Gtj"/>
                                             <constraint firstAttribute="trailing" secondItem="ZfP-i7-hmX" secondAttribute="trailing" id="87O-HI-vdk"/>
                                             <constraint firstItem="ZfP-i7-hmX" firstAttribute="top" secondItem="XxC-fP-hlA" secondAttribute="top" id="IK2-vt-ai1"/>
-                                            <constraint firstItem="jcb-ZK-SDy" firstAttribute="top" secondItem="ZfP-i7-hmX" secondAttribute="bottom" constant="160" id="JlD-vF-nsm"/>
+                                            <constraint firstItem="jcb-ZK-SDy" firstAttribute="top" secondItem="ZfP-i7-hmX" secondAttribute="bottom" constant="100" id="JlD-vF-nsm"/>
                                             <constraint firstItem="CFD-k1-gfa" firstAttribute="centerX" secondItem="XxC-fP-hlA" secondAttribute="centerX" id="Mep-Pz-2f8"/>
-                                            <constraint firstAttribute="bottom" secondItem="jcb-ZK-SDy" secondAttribute="bottom" constant="40" id="SMg-BH-gUX"/>
                                             <constraint firstAttribute="trailing" secondItem="jcb-ZK-SDy" secondAttribute="trailing" constant="20" id="jGn-Vu-fX0"/>
+                                            <constraint firstAttribute="bottom" secondItem="jcb-ZK-SDy" secondAttribute="bottom" constant="186" id="oGE-z5-aR9"/>
                                             <constraint firstItem="jcb-ZK-SDy" firstAttribute="leading" secondItem="XxC-fP-hlA" secondAttribute="leading" constant="20" id="q7U-t3-aPg"/>
                                             <constraint firstItem="ZfP-i7-hmX" firstAttribute="leading" secondItem="XxC-fP-hlA" secondAttribute="leading" id="wx9-dC-5mf"/>
                                         </constraints>
@@ -349,7 +361,7 @@
                             <constraint firstItem="XxC-fP-hlA" firstAttribute="width" secondItem="nNg-s9-BCJ" secondAttribute="width" id="DW8-YW-8Md"/>
                             <constraint firstItem="9YD-75-Bzs" firstAttribute="trailing" secondItem="Rws-ih-Wcd" secondAttribute="trailing" id="Hi4-Kq-gdE"/>
                             <constraint firstItem="9YD-75-Bzs" firstAttribute="bottom" secondItem="Rws-ih-Wcd" secondAttribute="bottom" id="l6Q-ki-r3e"/>
-                            <constraint firstItem="XxC-fP-hlA" firstAttribute="height" secondItem="nNg-s9-BCJ" secondAttribute="height" id="nHP-CT-D6g"/>
+                            <constraint firstItem="XxC-fP-hlA" firstAttribute="height" secondItem="nNg-s9-BCJ" secondAttribute="height" priority="200" id="nHP-CT-D6g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1x0-8n-0vI">
@@ -364,6 +376,7 @@
                         <outlet property="linkLabel" destination="PDR-oe-eTk" id="lBK-O0-dYc"/>
                         <outlet property="participantsLabel" destination="KOU-FD-dos" id="BLL-s0-W9c"/>
                         <outlet property="priceLabel" destination="LuV-MD-JYu" id="UGC-UI-pOJ"/>
+                        <outlet property="replaceActivityButton" destination="jcb-ZK-SDy" id="CAb-Yv-vzI"/>
                         <outlet property="titleLabel" destination="wq5-aw-DcA" id="qM2-GG-TfR"/>
                         <outlet property="typeLabel" destination="PyU-jc-P0e" id="4Eb-eH-iAA"/>
                     </connections>
@@ -395,7 +408,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ZJE-Pp-3PT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zef-dT-6km" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="svc-HX-Tdu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FcM-Tj-uih">
@@ -408,24 +420,24 @@
                         <segue destination="8ps-Nd-EXD" kind="relationship" relationship="rootViewController" id="pHs-fc-jTs"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zef-dT-6km" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744.9275362318842" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="j84-YT-4s3">
+            <size key="intrinsicContentSize" width="48" height="36"/>
+        </designable>
+        <designable name="jcb-ZK-SDy">
+            <size key="intrinsicContentSize" width="150" height="36"/>
+        </designable>
+    </designables>
     <resources>
         <image name="banknote" catalog="system" width="128" height="78"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.grid.2x2" catalog="system" width="128" height="99"/>
-        <namedColor name="HDSBlueBackground">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="HDSNegativeBackground">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

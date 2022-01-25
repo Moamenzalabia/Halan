@@ -9,8 +9,6 @@ import UIKit
 
 class StartViewController: UIViewController {
     
-    // MARK: IBOutlets
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

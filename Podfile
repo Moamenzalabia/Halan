@@ -6,9 +6,8 @@ target 'Halan' do
 
   pod 'SwiftLint', '0.43.1'
   pod 'Moya', '~> 15.0'
-#  pod ‘HalanUIComponent’, :git => "https://github.com/Moamenzalabia/HalanUIComponent.git"
-  pod 'HalanUIComponents', :path => “../HalanUIComponents"
-
+  pod ‘HalanUIComponents’, :git => "https://github.com/Moamenzalabia/HalanUIComponents.git"
+  
   target 'HalanTests' do
     inherit! :search_paths
     # Pods for testing

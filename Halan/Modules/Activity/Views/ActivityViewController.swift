@@ -34,6 +34,7 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        setAccessibilityIdentifier()
         initViewModel()
     }
     
@@ -89,22 +90,44 @@ class ActivityViewController: UIViewController {
     }
     
     func startLoading() {
+        switch viewModel?.loadingType {
+            case .ButtonLoading:
+                replaceActivityButton.showLoader()
+            case .ViewLoading:
+                startViewLoading()
+            default :
+                break
+        }
+    }
+    
+    func startViewLoading() {
         UIView.animate(withDuration: 0.2, animations: { [weak self] in
             guard let self = self else {
                 return
             }
             self.activityIndicator.startAnimating()
-            self.containerView.alpha = 0.0
+            self.containerView.isHidden = true
         })
     }
     
     func stopLoading() {
+        switch viewModel?.loadingType {
+            case .ButtonLoading:
+                replaceActivityButton.hideLoader()
+            case .ViewLoading:
+                stopViewLoading()
+            default :
+                break
+        }
+    }
+    
+    func stopViewLoading() {
         UIView.animate(withDuration: 0.2, animations: { [weak self] in
             guard let self = self else {
                 return
             }
             self.activityIndicator.stopAnimating()
-            self.containerView.alpha = 1.0
+            self.containerView.isHidden = false
         })
     }
     
@@ -117,8 +140,15 @@ class ActivityViewController: UIViewController {
         }
     }
     
+    func setAccessibilityIdentifier() {
+        containerView.accessibilityIdentifier = "containerViewIdentifier"
+        activityIndicator.accessibilityIdentifier = "activityIndicatorIdentifier"
+        replaceActivityButton.accessibilityIdentifier = "replaceActivityButtonIdentifier"
+    }
+    
     // MARK: - IBActions
     @IBAction func replaceActivityButtonDidPressed(_ sender: Any) {
+        viewModel?.loadingType = .ButtonLoading
         viewModel?.fetchActivity()
     }
     

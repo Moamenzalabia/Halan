@@ -77,15 +77,35 @@ class ActivityViewControllerTests: XCTestCase {
     }
     
     func testStartLoading() {
+        activityViewController.viewModel?.loadingType = .ViewLoading
         activityViewController.startLoading()
-        XCTAssertEqual(activityViewController.containerView.alpha, 0.0)
+        
+        XCTAssertTrue(activityViewController.containerView.isHidden)
         XCTAssertTrue(activityViewController.activityIndicator.isAnimating)
+        
+        activityViewController.viewModel?.loadingType = .ButtonLoading
+        activityViewController.startLoading()
+        
+        XCTAssertTrue(activityViewController.replaceActivityButton.isLoading)
     }
     
     func testStopLoading() {
+        activityViewController.viewModel?.loadingType = .ViewLoading
         activityViewController.stopLoading()
-        XCTAssertEqual(activityViewController.containerView.alpha, 1.0)
+        
+        XCTAssertFalse(activityViewController.containerView.isHidden)
         XCTAssertFalse(activityViewController.activityIndicator.isAnimating)
+        
+        activityViewController.viewModel?.loadingType = .ButtonLoading
+        activityViewController.stopLoading()
+        
+        XCTAssertFalse(activityViewController.replaceActivityButton.isLoading)
+    }
+    
+    func testSetupAccessibilityIdentifier() {
+        XCTAssertEqual(activityViewController.containerView.accessibilityIdentifier, "containerViewIdentifier")
+        XCTAssertEqual(activityViewController.activityIndicator.accessibilityIdentifier, "activityIndicatorIdentifier")
+        XCTAssertEqual(activityViewController.replaceActivityButton.accessibilityIdentifier, "replaceActivityButtonIdentifier")
     }
     
 }

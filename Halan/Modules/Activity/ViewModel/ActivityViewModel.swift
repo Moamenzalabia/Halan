@@ -18,6 +18,8 @@ class ActivityViewModel: ActivityViewModelProtocol {
     
     var showErrorMessageAlert: (() -> Void)?
     
+    var loadingType: LoadingType = .ViewLoading
+    
     var activityUIData: ActivityDataUIModel? {
         didSet {
             updateActivityUIData?()

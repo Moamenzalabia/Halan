@@ -19,6 +19,8 @@ protocol ActivityViewModelProtocol {
     var activityUIData: ActivityDataUIModel? { get }
     /// controller content state
     var contentState: ContentState { get }
+    /// controller loading type
+    var loadingType: LoadingType { get set }
     /// alert message string
     var alertMessage: String? { get }
     /// fetch activity data

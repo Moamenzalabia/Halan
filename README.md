@@ -21,7 +21,6 @@ Assignment Requirement: Create a simple iOS mobile application that:
 ## Screenshots
 
 | Start Screen | Activty Loading View | Activty UI Data | Button Loading |
-| --- | --- | --- | | --- |
 | <img width=180 src="screenshoots/StartScreen.png" />| <img width=180 src="screenshoots/ActivtyLoading.png" /> | <img width=180 src="screenshoots/activtyUIData.png" /> | <img width=180 src="screenshoots/ButtonLoading.png" />|
 
 

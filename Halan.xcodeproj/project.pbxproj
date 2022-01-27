@@ -11,21 +11,25 @@
 		016754E2279F0BBA007257FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016754E0279F0BBA007257FE /* Main.storyboard */; };
 		016754E4279F0BBB007257FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016754E3279F0BBB007257FE /* Assets.xcassets */; };
 		016754E7279F0BBB007257FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016754E5279F0BBB007257FE /* LaunchScreen.storyboard */; };
-		016754F2279F0BBC007257FE /* HalanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754F1279F0BBC007257FE /* HalanTests.swift */; };
 		016754FC279F0BBC007257FE /* HalanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FB279F0BBC007257FE /* HalanUITests.swift */; };
 		016754FE279F0BBC007257FE /* HalanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */; };
 		01675516279F1143007257FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675515279F1143007257FE /* StartViewController.swift */; };
 		0167551E279F1686007257FE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551D279F1686007257FE /* ActivityViewController.swift */; };
 		01675520279F16A0007257FE /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167551F279F16A0007257FE /* ActivityViewModel.swift */; };
 		01675522279F16AC007257FE /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675521279F16AC007257FE /* ActivityModel.swift */; };
-		01675524279F194B007257FE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675523279F194B007257FE /* State.swift */; };
-		01675526279F19A5007257FE /* ActivityDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675525279F19A5007257FE /* ActivityDataViewModel.swift */; };
+		01675524279F194B007257FE /* ContentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675523279F194B007257FE /* ContentState.swift */; };
+		01675526279F19A5007257FE /* ActivityDataUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675525279F19A5007257FE /* ActivityDataUIModel.swift */; };
 		01675529279F1AC4007257FE /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675528279F1AC4007257FE /* ActivityService.swift */; };
 		0167552B279F1B80007257FE /* URLsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552A279F1B80007257FE /* URLsConstants.swift */; };
 		0167552D279F1C69007257FE /* ActivityDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552C279F1C69007257FE /* ActivityDataService.swift */; };
 		0167552F279F4702007257FE /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167552E279F4702007257FE /* UIViewController+Alert.swift */; };
 		01675533279F4895007257FE /* UILabel+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01675532279F4895007257FE /* UILabel+LineSpacing.swift */; };
 		01A37F8B27A0A57A0048B793 /* color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A37F8A27A0A57A0048B793 /* color.xcassets */; };
+		01A37F9027A0AD1E0048B793 /* ActivityViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A37F8F27A0AD1E0048B793 /* ActivityViewControllerTests.swift */; };
+		01A37F9227A1230C0048B793 /* ActivityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A37F9127A1230C0048B793 /* ActivityViewModelTests.swift */; };
+		01A37F9627A170E60048B793 /* ActivityViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A37F9527A170E60048B793 /* ActivityViewModelProtocol.swift */; };
+		01A37F9827A17C350048B793 /* ActivityDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A37F9727A17C350048B793 /* ActivityDataServiceProtocol.swift */; };
+		01A37F9B27A180A90048B793 /* MockActivityDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A37F9A27A180A90048B793 /* MockActivityDataService.swift */; };
 		30D7A9A76B87BEC9CA1AC69D /* Pods_Halan_HalanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA92583A48C8B42E75B4DB2C /* Pods_Halan_HalanUITests.framework */; };
 		958429261EA2D4682D21422D /* Pods_Halan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */; };
 		C34EF1F9A18D1BD06C484786 /* Pods_HalanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78DD98CB1F69CA0FF78E12D /* Pods_HalanTests.framework */; };
@@ -56,7 +60,6 @@
 		016754E6279F0BBB007257FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		016754E8279F0BBB007257FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016754ED279F0BBC007257FE /* HalanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		016754F1279F0BBC007257FE /* HalanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanTests.swift; sourceTree = "<group>"; };
 		016754F7279F0BBC007257FE /* HalanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016754FB279F0BBC007257FE /* HalanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITests.swift; sourceTree = "<group>"; };
 		016754FD279F0BBC007257FE /* HalanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -64,14 +67,19 @@
 		0167551D279F1686007257FE /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		0167551F279F16A0007257FE /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		01675521279F16AC007257FE /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
-		01675523279F194B007257FE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		01675525279F19A5007257FE /* ActivityDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataViewModel.swift; sourceTree = "<group>"; };
+		01675523279F194B007257FE /* ContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentState.swift; sourceTree = "<group>"; };
+		01675525279F19A5007257FE /* ActivityDataUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataUIModel.swift; sourceTree = "<group>"; };
 		01675528279F1AC4007257FE /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 		0167552A279F1B80007257FE /* URLsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLsConstants.swift; sourceTree = "<group>"; };
 		0167552C279F1C69007257FE /* ActivityDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataService.swift; sourceTree = "<group>"; };
 		0167552E279F4702007257FE /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		01675532279F4895007257FE /* UILabel+LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LineSpacing.swift"; sourceTree = "<group>"; };
 		01A37F8A27A0A57A0048B793 /* color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = color.xcassets; sourceTree = "<group>"; };
+		01A37F8F27A0AD1E0048B793 /* ActivityViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewControllerTests.swift; sourceTree = "<group>"; };
+		01A37F9127A1230C0048B793 /* ActivityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModelTests.swift; sourceTree = "<group>"; };
+		01A37F9527A170E60048B793 /* ActivityViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModelProtocol.swift; sourceTree = "<group>"; };
+		01A37F9727A17C350048B793 /* ActivityDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataServiceProtocol.swift; sourceTree = "<group>"; };
+		01A37F9A27A180A90048B793 /* MockActivityDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockActivityDataService.swift; sourceTree = "<group>"; };
 		19702BFA8FAF3F5AC6490679 /* Pods-Halan-HalanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.release.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47F1AF9D401D0194B547AB88 /* Pods_Halan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585007BAD0EC60C70FD5F636 /* Pods-Halan-HalanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halan-HalanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Halan-HalanUITests/Pods-Halan-HalanUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +157,7 @@
 		016754F0279F0BBC007257FE /* HalanTests */ = {
 			isa = PBXGroup;
 			children = (
-				016754F1279F0BBC007257FE /* HalanTests.swift */,
+				01A37F8E27A0ACF40048B793 /* ActivityTests */,
 			);
 			path = HalanTests;
 			sourceTree = "<group>";
@@ -236,9 +244,11 @@
 		01675519279F1637007257FE /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				01C6751E27A1F97A00493EA3 /* UIModel */,
 				0167551C279F1670007257FE /* Model */,
 				0167551A279F1644007257FE /* ViewModel */,
 				0167551B279F1654007257FE /* Views */,
+				01A37F9427A1702D0048B793 /* Protocol */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -247,8 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				0167551F279F16A0007257FE /* ActivityViewModel.swift */,
-				01675525279F19A5007257FE /* ActivityDataViewModel.swift */,
-				01675523279F194B007257FE /* State.swift */,
+				01675523279F194B007257FE /* ContentState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 		01675527279F1AA6007257FE /* ActivityService */ = {
 			isa = PBXGroup;
 			children = (
+				01A37F9327A170190048B793 /* Protocol */,
 				01675528279F1AC4007257FE /* ActivityService.swift */,
 				0167552C279F1C69007257FE /* ActivityDataService.swift */,
 			);
@@ -292,6 +302,64 @@
 				01675532279F4895007257FE /* UILabel+LineSpacing.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		01A37F8E27A0ACF40048B793 /* ActivityTests */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F9E27A180DD0048B793 /* ActivityViewControllerTests */,
+				01A37F9D27A180D00048B793 /* ActivityViewModelTests */,
+				01A37F9927A1809D0048B793 /* MockActivityDataService */,
+			);
+			path = ActivityTests;
+			sourceTree = "<group>";
+		};
+		01A37F9327A170190048B793 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F9727A17C350048B793 /* ActivityDataServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		01A37F9427A1702D0048B793 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F9527A170E60048B793 /* ActivityViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		01A37F9927A1809D0048B793 /* MockActivityDataService */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F9A27A180A90048B793 /* MockActivityDataService.swift */,
+			);
+			path = MockActivityDataService;
+			sourceTree = "<group>";
+		};
+		01A37F9D27A180D00048B793 /* ActivityViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F9127A1230C0048B793 /* ActivityViewModelTests.swift */,
+			);
+			path = ActivityViewModelTests;
+			sourceTree = "<group>";
+		};
+		01A37F9E27A180DD0048B793 /* ActivityViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				01A37F8F27A0AD1E0048B793 /* ActivityViewControllerTests.swift */,
+			);
+			path = ActivityViewControllerTests;
+			sourceTree = "<group>";
+		};
+		01C6751E27A1F97A00493EA3 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				01675525279F19A5007257FE /* ActivityDataUIModel.swift */,
+			);
+			path = UIModel;
 			sourceTree = "<group>";
 		};
 		03D1C0D9B64A93859516553B /* Frameworks */ = {
@@ -557,15 +625,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A37F9827A17C350048B793 /* ActivityDataServiceProtocol.swift in Sources */,
 				01675520279F16A0007257FE /* ActivityViewModel.swift in Sources */,
 				01675529279F1AC4007257FE /* ActivityService.swift in Sources */,
-				01675526279F19A5007257FE /* ActivityDataViewModel.swift in Sources */,
+				01A37F9627A170E60048B793 /* ActivityViewModelProtocol.swift in Sources */,
+				01675526279F19A5007257FE /* ActivityDataUIModel.swift in Sources */,
 				0167552F279F4702007257FE /* UIViewController+Alert.swift in Sources */,
 				01675516279F1143007257FE /* StartViewController.swift in Sources */,
 				01675522279F16AC007257FE /* ActivityModel.swift in Sources */,
 				016754DB279F0BBA007257FE /* AppDelegate.swift in Sources */,
 				0167552B279F1B80007257FE /* URLsConstants.swift in Sources */,
-				01675524279F194B007257FE /* State.swift in Sources */,
+				01675524279F194B007257FE /* ContentState.swift in Sources */,
 				0167552D279F1C69007257FE /* ActivityDataService.swift in Sources */,
 				0167551E279F1686007257FE /* ActivityViewController.swift in Sources */,
 				01675533279F4895007257FE /* UILabel+LineSpacing.swift in Sources */,
@@ -576,7 +646,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				016754F2279F0BBC007257FE /* HalanTests.swift in Sources */,
+				01A37F9227A1230C0048B793 /* ActivityViewModelTests.swift in Sources */,
+				01A37F9B27A180A90048B793 /* MockActivityDataService.swift in Sources */,
+				01A37F9027A0AD1E0048B793 /* ActivityViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

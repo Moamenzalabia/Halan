@@ -15,5 +15,5 @@ struct ActivityModel: Codable {
     let price: Double?
     let link: String?
     let key: String?
-    let accessibility: Int?
+    let accessibility: Double?
 }

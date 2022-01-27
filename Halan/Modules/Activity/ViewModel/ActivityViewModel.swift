@@ -8,55 +8,58 @@
 import Foundation
 
 // MARK: - ActivityViewModel
-class ActivityViewModel {
+class ActivityViewModel: ActivityViewModelProtocol {
     
-    var service: ActivityDataService?
-    var updateUIClosure: (()->())?
-    var showAlertClosure: (()->())?
-    var updateLoadingStatus: (()->())?
+    var dataService: ActivityDataServiceProtocol?
     
-    init(service: ActivityDataService?) {
-        self.service = service
-    }
+    var updateLoadingStatus: (() -> Void)?
     
-    var activityDataViewModel: ActivityDataViewModel? {
+    var updateActivityUIData: (() -> Void)?
+    
+    var showErrorMessageAlert: (() -> Void)?
+    
+    var activityUIData: ActivityDataUIModel? {
         didSet {
-            self.updateUIClosure?()
+            updateActivityUIData?()
         }
     }
     
-    var state: State = .empty {
+    var contentState: ContentState = .empty {
         didSet {
-            self.updateLoadingStatus?()
+            updateLoadingStatus?()
         }
     }
     
     var alertMessage: String? {
         didSet {
-            self.showAlertClosure?()
+            showErrorMessageAlert?()
         }
     }
     
+    init(service: ActivityDataServiceProtocol?) {
+        dataService = service
+    }
+    
     func fetchActivity() {
-        state = .loading
-        service?.requestFetchActivity { [weak self] (activity, error) in
+        contentState = .loading
+        dataService?.requestFetchActivity { [weak self] (activity, error) in
             guard let self = self else {
                 return
             }
             guard error == nil else {
-                self.state = .error
+                self.contentState = .error
                 self.alertMessage = error?.localizedDescription
                 return
             }
             if let activity = activity {
                 self.createActivityDataViewModel(activity: activity)
             }
-            self.state = .populated
+            self.contentState = .populated
         }
     }
     
-    func createActivityDataViewModel(activity: ActivityModel ) {
-        activityDataViewModel = ActivityDataViewModel(activity: activity.activity, type: activity.type, participants: activity.participants, price: activity.price, link: activity.link)
+    func createActivityDataViewModel(activity: ActivityModel) {
+        activityUIData = ActivityDataUIModel(activity: activity.activity, type: activity.type, participants: activity.participants, price: activity.price, link: activity.link)
     }
     
 }

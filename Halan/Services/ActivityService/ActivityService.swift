@@ -8,6 +8,7 @@
 import Foundation
 import Moya
 
+/// This is the enum used to create activity request service.
 enum ActivityService {
     case fetchActivity
 }
@@ -24,15 +25,15 @@ extension ActivityService: TargetType {
     
     var path: String {
         switch self {
-        case .fetchActivity:
-            return "/activity"
+            case .fetchActivity:
+                return "/activity"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .fetchActivity:
-            return .get
+            case .fetchActivity:
+                return .get
         }
     }
     

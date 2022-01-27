@@ -16,11 +16,6 @@ class StartViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func startButtonDidPressed(_ sender: Any) {
-        navigateToActivityViewController()
-    }
-    
-    // MARK: - Navigation
-    func navigateToActivityViewController() {
         let activityViewController = ActivityViewController.instance()
         navigationController?.pushViewController(activityViewController, animated: true)
     }

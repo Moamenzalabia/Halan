@@ -39,6 +39,8 @@ Clean Architecture with MVVM pattern in the presentation layer
 
 ## Setup
 
+Download code or clone repo then navigate to code path and run 
+
 ```
 pod install
 ```

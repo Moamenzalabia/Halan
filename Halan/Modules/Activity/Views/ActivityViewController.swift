@@ -42,6 +42,7 @@ class ActivityViewController: UIViewController {
     func configureUI() {
         linkLabel.underline()
         navigationItem.title = "Activity"
+        replaceActivityButton.isHidden = true
     }
     
     func initViewModel() {
@@ -65,6 +66,7 @@ class ActivityViewController: UIViewController {
                 case .loading:
                     self.startLoading()
                 case .populated:
+                    self.replaceActivityButton.isHidden = false
                     self.stopLoading()
                 default :
                     break

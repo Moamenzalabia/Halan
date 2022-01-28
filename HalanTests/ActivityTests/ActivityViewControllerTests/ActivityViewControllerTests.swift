@@ -30,6 +30,7 @@ class ActivityViewControllerTests: XCTestCase {
     func testViewDidLoad() {
         activityViewController.viewDidLoad()
         XCTAssertNotNil(activityViewController.viewModel)
+        XCTAssertTrue(activityViewController.replaceActivityButton.isHidden)
     }
     
     func testConfigureUI() {

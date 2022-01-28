@@ -146,7 +146,8 @@
 		016754D9279F0BBA007257FE /* Halan */ = {
 			isa = PBXGroup;
 			children = (
-				0167550A279F0CD8007257FE /* Supporting Files */,
+				01A40EC027A4187700056635 /* AppDelegate */,
+				01A40EBF27A4184B00056635 /* Configurations */,
 				0167550F279F0D58007257FE /* Modules */,
 				0167550E279F0D49007257FE /* Storyboards */,
 				0167550C279F0D30007257FE /* Extensions */,
@@ -171,15 +172,6 @@
 				01EB995327A298E30084C263 /* ActivityViewControllerUITests */,
 			);
 			path = HalanUITests;
-			sourceTree = "<group>";
-		};
-		0167550A279F0CD8007257FE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				016754DA279F0BBA007257FE /* AppDelegate.swift */,
-				016754E8279F0BBB007257FE /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0167550B279F0CFF007257FE /* Resources */ = {
@@ -355,6 +347,22 @@
 				01A37F8F27A0AD1E0048B793 /* ActivityViewControllerTests.swift */,
 			);
 			path = ActivityViewControllerTests;
+			sourceTree = "<group>";
+		};
+		01A40EBF27A4184B00056635 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				016754E8279F0BBB007257FE /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		01A40EC027A4187700056635 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				016754DA279F0BBA007257FE /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		01C6751E27A1F97A00493EA3 /* UIModel */ = {

@@ -34,7 +34,7 @@ class ActivityViewControllerUITests: XCTestCase {
         
         let containerView = application.otherElements["containerViewIdentifier"]
         
-        XCTAssertFalse(containerView.waitForExistence(timeout: 8), "can't found activity container view")
+        XCTAssertTrue(containerView.waitForExistence(timeout: 8), "can't found activity container view")
     }
     
     func testLoading() {
